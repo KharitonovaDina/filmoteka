@@ -1,0 +1,49 @@
+{
+  "name": "root_starter",
+  "version": "1.0.0",
+  "description": "Starter from :rootFront",
+  "main": "index.js",
+  "scripts": {
+    "dev": "webpack serve --config ./webpack_config/webpack.dev.js",
+    "build": "webpack --config ./webpack_config/webpack.build.js"
+  },
+  "browserslist": [
+    "> 1%",
+    "last 3 versions"
+  ],
+  "author": ":rootFront",
+  "license": "MIT",
+  "devDependencies": {
+    "@babel/core": "^7.15.5",
+    "@babel/eslint-parser": "^7.15.7",
+    "@babel/plugin-transform-runtime": "^7.15.0",
+    "@babel/preset-env": "^7.15.6",
+    "autoprefixer": "^10.3.4",
+    "babel-loader": "^8.2.2",
+    "copy-webpack-plugin": "^9.0.1",
+    "css-loader": "^6.3.0",
+    "cssnano": "^5.0.8",
+    "eslint": "^7.32.0",
+    "eslint-webpack-plugin": "^3.0.1",
+    "html-webpack-plugin": "^5.5.0",
+    "mini-css-extract-plugin": "^2.3.0",
+    "node-sass": "^6.0.1",
+    "postcss": "^8.3.8",
+    "postcss-loader": "^6.1.1",
+    "postcss-sort-media-queries": "^4.1.0",
+    "pug": "^3.0.2",
+    "pug-loader": "^2.4.0",
+    "sass-loader": "^12.1.0",
+    "style-loader": "^3.2.1",
+    "stylelint": "^13.13.1",
+    "stylelint-declaration-block-no-ignored-properties": "^2.4.0",
+    "stylelint-order": "^4.1.0",
+    "svg-sprite-loader": "^6.0.9",
+    "svgo-loader": "^3.0.0",
+    "webpack": "^5.53.0",
+    "webpack-cli": "^4.8.0",
+    "webpack-dev-server": "^4.11.1",
+    "webpack-merge": "^5.8.0"
+  },
+  "dependencies": {}
+}

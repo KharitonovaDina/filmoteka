@@ -1,0 +1,30 @@
+extends ../layout/default
+
+block variables
+  - var title = 'Main';
+  - var description = 'Description of index';
+
+block content
+  main
+    .block
+      form.form
+        fieldset.form__wrap
+          legend.form__ttl Новый сериал/фильм
+          .form__toggle
+            label Сериал
+              input.form__content-type(name="typeOfContent" type="radio" value="serial" checked)
+            label Фильм
+              input.form__content-type(name="typeOfContent" type="radio" value="film")
+          label Название сериала
+            input.form__content-ttl(type="text" placeholder="Введите название сериала" required)
+          label Обложка
+            input.form__content-img(type="file")
+          label Ссылка на сериал
+            input.form__content-link(type="text" placeholder="Вставьте ссылку на сериал")
+          input.form__content-seasons(type="number" placeholder="Количество сезонов")
+          textarea.form__content-description(placeholder="Введите описание" maxlength="200" rows="10")
+          button.form__button(type="button") Добавить
+
+          button.btn-slider.form__button(type="button") Add
+
+    ul.movie-list

@@ -142,22 +142,17 @@ function load() {
   //   }
   // })
 
-  const token = 'K3TQ5TK-56Y4Q29-JB6M1X0-FNM94CC'
-  const name = 'дневники вамп'
+  const movieTitle = document.querySelector('.form__search')
+  const searchBtn = document.querySelector('.btn-search')
+  const token = 'GGNGCZG-AM74WAW-KEGYJ0S-12HAXV6'
+  console.log(movieTitle)
 
 
-  const data = async () => {
-    const result = await fetch(`https://api.kinopoisk.dev/movie?field=name&search=${name}&isStrict=false&token=${token}`, {
-      // method: 'GET',
-      // 'Accept': 'application/json',
-      // 'Content-Type': 'application/json'
-    })
-
+  searchBtn.addEventListener('click', async () => {
+    const result = await fetch(`https://api.kinopoisk.dev/movie?field=type&search=tv-series&field=name&search=${movieTitle.value}&isStrict=false&token=${token}`)
     return result.json()
-  }
-
-  data()
-      .then((res) => {
-        console.log(res)
-      })
+    .then((res) => {
+      console.log(res)
+    })
+  })
 }

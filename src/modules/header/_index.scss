@@ -2,10 +2,20 @@
 
 }
 
-@media screen and (min-width: 600px) {
-
-}
-
 @media screen and (min-width: 1024px) {
+  .header {
+    display: flex;
+    padding: 48px 12px;
+    height: 100vh;
+    width: 266px;
+    background-color: $bg;
+  }
+
+  .header__wrap {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+  }
 
 }

@@ -6,8 +6,6 @@
 * БЭМ
 * SCSS
 * Pug
-* GreenSock
-* Three.js
 
 # Установка
 * Установите [NodeJS](https://nodejs.org/en/) (если не установлен)

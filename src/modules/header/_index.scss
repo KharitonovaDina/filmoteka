@@ -95,6 +95,7 @@
     border: none;
 
     &:hover {
+      height: 58px;
       color: $active-c;
       fill: $active-c;
     }

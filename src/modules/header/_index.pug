@@ -1,30 +1,34 @@
 mixin header()
   header.header
-    .header__wrap
-      .header__logo Filmoteka
-      nav.header__menu
-        a.header__menu-item.header__menu-item_active(href = "https://langformula.ru/whats-up-answers/")
-          .header__svg-wrap
+    a.header__link(href = "/home.html")
+      span.header__logo Filmoteka
+
+    nav.header__nav
+      ul.header__menu
+        li.header__menu-item
+            span.header__txt 1
+            span.header__txt 2
+        li.header__menu-item
+          a.header__menu-link.header__link(href = "https://langformula.ru/whats-up-answers/")
             svg.header__svg
               use(xlink:href="./assets/img/sprite.svg#_home")
-          span.header__txt Home
-        a.header__menu-item(href = "https://langformula.ru/whats-up-answers/")
-          .header__svg-wrap
+            span.header__txt Home
+        li.header__menu-item
+          a.header__menu-link.header__link(href = "https://langformula.ru/whats-up-answers/")
             svg.header__svg
               use(xlink:href="./assets/img/sprite.svg#_tvseries")
           span.header__txt TV-series
-        a.header__menu-item(href = "https://langformula.ru/whats-up-answers/")
-          .header__svg-wrap
+        li.header__menu-item
+          a.header__menu-link.header__link(href = "https://langformula.ru/whats-up-answers/")
             svg.header__svg
               use(xlink:href="./assets/img/sprite.svg#_movie")
           span.header__txt Movies
-      button.btn.header__logout
-        .header__svg-wrap
-          svg.header__svg
-            use(xlink:href="./assets/img/sprite.svg#_logout")
+      button.header__logout-btn
+        svg.header__svg
+          use(xlink:href="./assets/img/sprite.svg#_logout")
         span.header__txt Log Out
       //button.btn.header__login Login
       //  svg.header__svg
       //    use(xlink:href="./assets/img/sprite.svg#_login")
-
+//.header__menu-item_active
 

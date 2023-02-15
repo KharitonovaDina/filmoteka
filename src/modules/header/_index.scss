@@ -9,17 +9,15 @@
 
   .header {
     display: flex;
+    flex-direction: column;
     padding: 48px 12px;
     height: 100vh;
     width: 266px;
     background-color: $bg;
   }
 
-  .header__wrap {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    width: 100%;
+  .header__link {
+    text-decoration: none;
   }
 
   .header__logo {
@@ -29,78 +27,77 @@
     line-height: 47px;
     color: $p-c;
     text-transform: uppercase;
-    align-self: center;
+  }
+
+  .header__nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+    height: 100%;
+    padding: 0 39px;
   }
 
   .header__menu {
     display: flex;
     flex-direction: column;
-    padding: 0 39px;
     row-gap: 30px;
   }
 
-  .header__menu-item {
-    display: flex;
-    column-gap: 18px;
-    align-items: center;
-    height: 100%;
-    text-decoration: none;
+  .header__txt {
     font-family: $p-f;
     font-weight: 500;
     font-size: 20px;
     line-height: 22px;
     color: $p-c;
-    fill: $p-c;
-
-    &:hover {
-      color: $active-c;
-      fill: $active-c;
-    }
-
-    &_active {
-      color: $active-c;
-      fill: $active-c;
-    }
-  }
-
-  .header__svg-wrap {
-    width: 24px;
-    height: 24px;
   }
 
   .header__svg {
-    width: 100%;
-    height: 100%;
+    fill: $p-c;
+    width: 16px;
+    height: 16px;
   }
 
+  .header__menu-item {
+    //display: flex;
+    //column-gap: 18px;
+    //align-items: center;
+    height: 36px;
+    width: 100%;
 
-  .btn {
+    &:hover {
+      color: $active-c;
+      //fill: $active-c;
+    }
+  }
+    //.header__menu-link {
+    //  display: flex;
+    //  column-gap: 18px;
+    //  align-items: center;
+    //
+    //}
+
+    //&_active {
+    //  color: $active-c;
+    //  fill: $active-c;
+    //}
+
+
+  .header__logout-btn {
     display: flex;
     align-items: center;
     justify-content: flex-start;
     column-gap: 18px;
     width: 100%;
     height: 48px;
-    padding: 0 39px;
+    padding: 4px 0;
     background-color: $bg;
     border: none;
-    color: $p-c;
-    font-family: $p-f;
-    font-weight: 500;
-    font-size: 20px;
-    line-height: 22px;
-    fill: $p-c;
 
     &:hover {
       color: $active-c;
       fill: $active-c;
     }
-  }
-
-
-
-  .header__login {
-    display: none;
   }
 
 

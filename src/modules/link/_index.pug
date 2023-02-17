@@ -1,2 +1,5 @@
-mixin link()
-  a.link Ghbdtn
+mixin link(href, iconHref, name)
+  a.link(href = href)
+    svg.link__icon
+      use(xlink:href = iconHref)
+    span.link__label= name

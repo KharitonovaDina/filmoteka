@@ -1,3 +1,7 @@
+include ../button/_index
+include ../link/_index
+include ../iconBtn/_index
+
 mixin header()
   header.header
     a.header__logo-link(href = "/home.html")
@@ -5,45 +9,20 @@ mixin header()
 
     nav.header__navigation
       ul.header__menu-list
-        li.header__menu-item
-          a.header__menu-link.header__menu-link_active(href = "https://langformula.ru/whats-up-answers/")
-            svg.header__menu-icon
-              use(xlink:href="./assets/img/sprite.svg#_home")
-            span.header__txt Home
-        li.header__menu-item
-          a.header__menu-link(href = "https://langformula.ru/whats-up-answers/")
-            svg.header__menu-icon
-              use(xlink:href="./assets/img/sprite.svg#_movie")
-            span.header__txt Movie
-        li.header__menu-item
-          a.header__menu-link(href = "https://langformula.ru/whats-up-answers/")
-            svg.header__menu-icon
-              use(xlink:href="./assets/img/sprite.svg#_tvseries")
-            span.header__txt TV-series
-        li.header__menu-item
-          a.header__menu-link(href = "https://langformula.ru/whats-up-answers/")
-            svg.header__menu-icon
-              use(xlink:href="./assets/img/sprite.svg#_home")
-            span.header__txt Home
-        li.header__menu-item
-          a.header__menu-link(href = "https://langformula.ru/whats-up-answers/")
-            svg.header__menu-icon
-              use(xlink:href="./assets/img/sprite.svg#_movie")
-            span.header__txt Movie
-        li.header__menu-item
-          a.header__menu-link(href = "https://langformula.ru/whats-up-answers/")
-            svg.header__menu-icon
-              use(xlink:href="./assets/img/sprite.svg#_tvseries")
-            span.header__txt TV-series
+        li
+          +link("https://langformula.ru/whats-up-answers/", "./assets/img/sprite.svg#_home", 'Home' )
+        li
+          +link("https://langformula.ru/whats-up-answers/", "./assets/img/sprite.svg#_movie", 'Movie' )
+        li
+          +link("https://langformula.ru/whats-up-answers/", "./assets/img/sprite.svg#_tvseries", 'TV-series' )
+        li
+          +link("https://langformula.ru/whats-up-answers/", "./assets/img/sprite.svg#_home", 'Home' )
+        li
+          +link("https://langformula.ru/whats-up-answers/", "./assets/img/sprite.svg#_movie", 'Movie' )
+        li
+          +link("https://langformula.ru/whats-up-answers/", "./assets/img/sprite.svg#_tvseries", 'TV-series' )
 
       .header__btn-wrap
-        a.header__menu-link(href = "https://langformula.ru/whats-up-answers/")
-          svg.header__menu-icon
-            use(xlink:href="./assets/img/sprite.svg#_settings")
-          span.header__txt Settings
-        button.header__logout-btn
-          svg.header__btn-icon
-            use(xlink:href="./assets/img/sprite.svg#_logout")
-          span.header__txt Log out
-
-      button.header__login-btn.header__txt Log in
+        +link("https://langformula.ru/whats-up-answers/", "./assets/img/sprite.svg#_settings", 'Settings' )
+        +iconBtn("./assets/img/sprite.svg#_logout", 'Log out')
+      +button("header__btn", 'Log in')

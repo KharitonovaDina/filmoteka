@@ -4,4 +4,42 @@
 
 @media screen and (min-width: 1024px) {
 
+  .link {
+    display: flex;
+    align-items: center;
+    column-gap: 18px;
+    text-decoration: none;
+    width: 100%;
+    height: 100%;
+
+    &:hover .link__icon {
+      fill: $active-c;
+    }
+
+    &:hover .link__label {
+      color: $active-c;
+    }
+
+    &_active .link__icon {
+      fill: $active-c;
+    }
+
+    &_active .link__label {
+      color: $active-c;
+    }
+  }
+
+  .link__icon {
+    fill: $p-c;
+    width: 16px;
+    height: 16px;
+  }
+
+  .link__label {
+    font-family: $p-f;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 22px;
+    color: $p-c;
+  }
 }

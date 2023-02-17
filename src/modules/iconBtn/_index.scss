@@ -1,0 +1,34 @@
+@media screen and (min-width: 320px) {
+
+}
+
+@media screen and (min-width: 1024px) {
+  .icon-btn {
+    background-color: $bg;
+    border: none;
+    text-align: start;
+
+    &:hover .icon-btn__txt {
+      color: $active-c;
+    }
+
+    &:hover .icon-btn__img {
+      fill: $active-c;
+    }
+  }
+
+  .icon-btn__img {
+    fill: $p-c;
+    width: 16px;
+    height: 16px;
+    margin-right: 18px;
+  }
+
+  .icon-btn__txt {
+    font-family: $p-f;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 22px;
+    color: $p-c;
+  }
+}

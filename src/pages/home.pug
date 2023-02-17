@@ -4,14 +4,13 @@ block variables
   - var title = 'Home';
   - var description = 'Description of index';
 
-include ../modules/searchInput/_index
-include ../modules/button/_index
+include ../modules/searchForm/_index
+
 
 block content
   main.main
     .div
       .div1
-        +searchInput()
-        +button("main__btn", 'Search')
+        +searchForm()
       .div2
-        span Div 2
+

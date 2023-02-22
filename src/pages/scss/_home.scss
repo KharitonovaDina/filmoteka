@@ -24,6 +24,10 @@
     height: 3000px;
   }
 
+  .div-wrap {
+    display: flex;
+  }
+
   .div2 {
     background-color: $bg-c;
     border-left: 2px solid lightgrey;

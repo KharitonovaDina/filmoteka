@@ -5,3 +5,4 @@ import './button/_index';
 import './iconBtn/_index';
 import './avatar/_index';
 import './heroCard/_index';
+import './notification/_index';

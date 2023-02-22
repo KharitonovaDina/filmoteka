@@ -7,13 +7,17 @@ block variables
 include ../modules/searchForm/_index
 include ../modules/avatar/_index
 include ../modules/heroCard/_index
+include ../modules/notification/_index
+
 
 
 block content
   main.main
     .div
       .div1
-        +searchForm()
+        .div-wrap
+          +searchForm()
+          +notification()
         +heroCard()
       .div2
         +avatar()

@@ -9,8 +9,7 @@
     display: flex;
     justify-content: space-between;
     column-gap: 18px;
-    width: inherit;
-    padding: 48px 48px;
+    width: 100%;
 
     &::after {
       position: absolute;
@@ -20,7 +19,7 @@
       width: 24px;
       height: 24px;
       transform: translateY(50%);
-      left: 59px;
+      left: 11px;
       background-repeat: no-repeat;
     }
 

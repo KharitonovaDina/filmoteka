@@ -4,4 +4,17 @@
 
 @media screen and (min-width: 1024px) {
 
+  .notification {
+    background-color: inherit;
+    border: none;
+    width: 100%;
+    height: inherit;
+
+  }
+
+  .icon-btn__img {
+    width: 100%;
+    height: 100%;
+    color: #151D28;
+  }
 }

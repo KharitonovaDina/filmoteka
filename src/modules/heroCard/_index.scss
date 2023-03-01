@@ -22,8 +22,8 @@
     flex-direction: column;
     width: auto;
     //height: 100%;
-    bottom: 49px;
-    left: 47px;
+    bottom: 79px;
+    left: 77px;
   }
 
   .hero-card__ttl {
@@ -44,6 +44,11 @@
     text-transform: uppercase;
     color: #FFFFFF;
     margin-bottom: 20px;
+  }
+
+  .hero-card__btn-group {
+    display: flex;
+    column-gap: 10px;
   }
 
   .hero-card__btn {

@@ -1,0 +1,8 @@
+include ../watchLink/_index
+
+mixin movieCard(link, href)
+  .movie-card
+    +watchLink("movie-card__link", link, 'Watch now')
+    +addBtn("movie-card__add-btn")
+    img.movie-card__img(src = href)
+

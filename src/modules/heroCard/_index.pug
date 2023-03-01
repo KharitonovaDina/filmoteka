@@ -1,3 +1,6 @@
+include ../button/_index
+include ../addBtn/_index
+
 mixin heroCard()
   .hero-card
     .hero-card__inner
@@ -5,5 +8,6 @@ mixin heroCard()
       span.hero-card__subtitle Action, horror, comedy
       .hero-card__btn-group
         +button("hero-card__btn", 'Watch now')
+        +addBtn()
     img.hero-card__img(src = require("../assets/img/tmp/tmp-1.jpg"))
 

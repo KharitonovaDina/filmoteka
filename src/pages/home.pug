@@ -13,10 +13,10 @@ include ../modules/notification/_index
 
 block content
   main.main
-    .div1
+    section.div1
       .div-wrap
-        +searchForm()
-        +notification()
+        +searchForm("div1__search")
+        +notification("div1__notification")
       .div-wrap
         +heroCard()
     .div2

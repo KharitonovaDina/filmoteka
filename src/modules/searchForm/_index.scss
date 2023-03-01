@@ -9,7 +9,6 @@
     display: flex;
     justify-content: space-between;
     column-gap: 18px;
-    width: 100%;
 
     &::after {
       position: absolute;
@@ -45,6 +44,5 @@
 
   .search__btn {
     width: 100px;
-    height: 48px;
   }
 }

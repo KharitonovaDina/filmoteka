@@ -18,22 +18,30 @@
   .div1 {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    align-items: center;
     background-color: $bg-c;
-    //max-width: 1200px;
     width: 100%;
     height: 3000px;
   }
 
   .div-wrap {
     display: flex;
-    flex-direction: column;
-    justify-content: center;
     align-items: center;
+    justify-content: space-between;
     max-width: 1200px;
-    //width: 100%;
-    padding: 48px;
+    width: 100%;
+    padding: 48px 0;
 
+  }
+
+  .div1__search {
+    width: 800px;
+    height: 48px;
+  }
+
+  .div1__notification {
+    width: 24px;
+    height: 24px;
   }
 
   .div2 {

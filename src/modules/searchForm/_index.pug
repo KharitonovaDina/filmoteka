@@ -1,7 +1,7 @@
 include ../button/_index
 
-mixin searchForm()
-  form.search
+mixin searchForm(isClass)
+  form(class = "search "+ isClass)
     input.search__input(type = "search" placeholder = "Search" tabindex = "1")
     +button("search__btn", 'Search', 2)
 

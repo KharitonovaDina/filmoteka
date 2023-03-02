@@ -9,3 +9,4 @@ import './notification/_index';
 import './addBtn/_index';
 import './movieCard/_index';
 import './watchLink/_index';
+import './episodeCard/_index'

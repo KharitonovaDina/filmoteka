@@ -31,7 +31,20 @@
     max-width: 1200px;
     width: 100%;
     padding: 48px 0 0;
+  }
 
+  .div1__slider-wrap {
+    display: flex;
+    flex-direction: column;
+    max-width: 1200px;
+    width: 100%;
+    padding: 48px 0 0;
+  }
+
+  .div-slider {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
   }
 
   .div1__search {
@@ -42,6 +55,14 @@
   .div1__notification {
     width: 24px;
     height: 24px;
+  }
+
+  .div1-ttl {
+    font-family: $p-f;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 23px;
+    margin-bottom: 27px;
   }
 
   .div2 {

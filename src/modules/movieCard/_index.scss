@@ -12,11 +12,16 @@
 
   .movie-card__link {
     position: absolute;
+    padding: 12px 0;
     width: 150px;
     height: 41px;
     bottom: 15px;
     left: 50%;
     transform: translateX(-50%);
+    font-family: $p-f;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 16px;
   }
 
   .movie-card__add-btn {

@@ -10,6 +10,7 @@ include ../modules/heroCard/_index
 include ../modules/notification/_index
 include ../modules/movieCard/_index
 include ../modules/watchLink/_index
+include ../modules/episodeCard/_index
 
 
 
@@ -21,12 +22,15 @@ block content
         +notification("div1__notification")
       .div-wrap
         +heroCard()
-      .div-wrap
-        +movieCard("https://www.kinopoisk.ru/series/5144175/?from_block=trailer_promo", require("../assets/img/tmp/tmp-3.jpg"))
-        +movieCard("https://www.kinopoisk.ru/series/5144175/?from_block=trailer_promo", require("../assets/img/tmp/tmp-4.jpg"))
-        +movieCard("https://www.kinopoisk.ru/series/5144175/?from_block=trailer_promo", require("../assets/img/tmp/tmp-5.jpg"))
-        +movieCard("https://www.kinopoisk.ru/series/5144175/?from_block=trailer_promo", require("../assets/img/tmp/tmp-6.jpg"))
-        +movieCard("https://www.kinopoisk.ru/series/5144175/?from_block=trailer_promo", require("../assets/img/tmp/tmp-3.jpg"))
+      .div1__slider-wrap
+        h2.div1-ttl Now Playing
+        .div-slider
+          +movieCard("https://www.kinopoisk.ru/series/5144175/?from_block=trailer_promo", require("../assets/img/tmp/tmp-3.jpg"))
+          +movieCard("https://www.kinopoisk.ru/series/5144175/?from_block=trailer_promo", require("../assets/img/tmp/tmp-4.jpg"))
+          +movieCard("https://www.kinopoisk.ru/series/5144175/?from_block=trailer_promo", require("../assets/img/tmp/tmp-5.jpg"))
+          +movieCard("https://www.kinopoisk.ru/series/5144175/?from_block=trailer_promo", require("../assets/img/tmp/tmp-6.jpg"))
+          +movieCard("https://www.kinopoisk.ru/series/5144175/?from_block=trailer_promo", require("../assets/img/tmp/tmp-3.jpg"))
     .div2
       +avatar()
+      +episodeCard()
 

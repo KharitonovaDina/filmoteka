@@ -10,7 +10,7 @@
     padding: 48px 12px;
     height: 100vh;
     width: 280px;
-    background-color: $bg;
+    background-color: $sidebar-c;
   }
 
   .header__logo-link {
@@ -22,11 +22,11 @@
   }
 
   .header__logo {
-    font-family: $ttl-f;
+    font-family: $logo-f;
     font-weight: 900;
     font-size: 36px;
     line-height: 47px;
-    color: $p-c;
+    color: $text-c;
     text-transform: uppercase;
   }
 

@@ -21,14 +21,13 @@
     align-items: center;
     background-color: $bg-c;
     width: 100%;
-    height: 3000px;
   }
 
   .div-wrap {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    max-width: 1200px;
+    max-width: 800px;
     width: 100%;
     padding: 48px 0 0;
   }
@@ -36,7 +35,7 @@
   .div1__slider-wrap {
     display: flex;
     flex-direction: column;
-    max-width: 1200px;
+    max-width: 800px;
     width: 100%;
     padding: 48px 0 0;
   }
@@ -48,7 +47,7 @@
   }
 
   .div1__search {
-    width: 800px;
+    width: 100%;
     height: 48px;
   }
 
@@ -58,7 +57,7 @@
   }
 
   .div1-ttl {
-    font-family: $p-f;
+    font-family: $primary-f;
     font-weight: 700;
     font-size: 20px;
     line-height: 23px;
@@ -66,10 +65,9 @@
   }
 
   .div2 {
-    background-color: $bg-c;
-    border-left: 2px solid lightgrey;
+    background-color: $sidebar-c;
     width: 440px;
-    height: 100vh;
+    padding: 0 48px;
   }
 
 

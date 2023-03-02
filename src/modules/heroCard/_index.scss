@@ -22,27 +22,25 @@
     flex-direction: column;
     width: auto;
     //height: 100%;
-    bottom: 79px;
-    left: 77px;
+    bottom: 49px;
+    left: 47px;
   }
 
   .hero-card__ttl {
-    font-family: $p-f;
+    font-family: $primary-f;
     font-weight: 700;
     font-size: 40px;
     line-height: 46px;
     text-transform: uppercase;
-    color: #FFFFFF;
     margin-bottom: 12px;
   }
 
   .hero-card__subtitle {
-    font-family: $p-f;
+    font-family: $primary-f;
     font-weight: 600;
     font-size: 12px;
     line-height: 14px;
     text-transform: uppercase;
-    color: #FFFFFF;
     margin-bottom: 20px;
   }
 

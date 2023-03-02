@@ -1,6 +1,11 @@
+include ../checkBtn/_index
+
 mixin episodeCard()
     .episode
-        img.episode__poster(src = require("../assets/img/tmp/tmp-7.jpg"))
-        h3.episode__series Doctor Who
-        span S03 | E11
-        h4.episode__title Utopia
+        .episode__poster-wrap
+            img.episode__poster(src = require("../assets/img/tmp/tmp-7.jpg"))
+        .episode-wrap
+            h3.episode__series Doctor Who
+            span.episode__number s03 | e11
+            h4.episode__title Utopia
+        +checkBtn()

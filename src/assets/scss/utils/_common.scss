@@ -7,8 +7,9 @@
 @media screen and (min-width: 1024px) {
   html {
     font-size: 0.83vw;
-    font-family: $p-f;
+    font-family: $primary-f;
     font-weight: 500;
     line-height: 22px;
+    color: $text-c;
   }
 }

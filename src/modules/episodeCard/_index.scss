@@ -3,5 +3,52 @@
 }
 
 @media screen and (min-width: 1024px) {
+  .episode {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    //height: 100%;
+    border-radius: 8px;
 
+    &:hover {
+      //background-color: #151D28;
+      cursor: pointer;
+    }
+  }
+
+  .episode-wrap {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .episode__poster-wrap {
+    width: 90px;
+    height: 64px;
+    border-radius: 4px;
+    overflow: hidden;
+  }
+
+  .episode__poster {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .episode__series {
+    background-color: $active-c;
+    border-radius: 4px;
+    padding: 2px 4px;
+    //margin-bottom: 4px;
+  }
+
+  .episode__number {
+    text-transform: uppercase;
+    //margin-bottom: 4px;
+  }
+
+  .episode__title {
+    font-size: 12px;
+    line-height: 16px;
+  }
 }

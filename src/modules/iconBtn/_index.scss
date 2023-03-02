@@ -4,7 +4,7 @@
 
 @media screen and (min-width: 1024px) {
   .icon-btn {
-    background-color: $bg;
+    background-color: $sidebar-c;
     border: none;
     text-align: start;
 
@@ -18,13 +18,13 @@
   }
 
   .icon-btn__img {
-    fill: $p-c;
+    fill: $text-c;
     width: 16px;
     height: 16px;
     margin-right: 18px;
   }
 
   .icon-btn__txt {
-    color: $p-c;
+    color: $text-c;
   }
 }

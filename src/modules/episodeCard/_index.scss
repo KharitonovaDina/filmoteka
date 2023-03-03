@@ -5,29 +5,19 @@
 @media screen and (min-width: 1024px) {
   .episode {
     display: flex;
-    //justify-content: space-between;
     column-gap: 18px;
     width: 100%;
-    //height: 100%;
     border-radius: 8px;
     background-color: $bg-c;
 
     &:hover {
-      //background-color: #151D28;
       cursor: pointer;
     }
   }
 
-  .episode-wrap {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    padding: 4px 4px 4px 0;
-  }
-
   .episode__poster-wrap {
-    width: 90px;
-    height: 64px;
+    width: 100px;
+    height: 80px;
     border-radius: 4px 0 0 4px;
     overflow: hidden;
   }
@@ -38,17 +28,23 @@
     object-fit: cover;
   }
 
+  .episode-wrap {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 4px 4px 4px 0;
+  }
+
   .episode__series {
-    //background-color: $active-c;
     border-radius: 4px;
-    //padding: 2px 4px;
     color: $active-c;
-    //margin-bottom: 4px;
+    font-size: 18px;
+    font-weight: 700;
   }
 
   .episode__number {
     text-transform: uppercase;
-    //margin-bottom: 4px;
+    margin-bottom: 4px;
   }
 
   .episode__title {
@@ -58,6 +54,7 @@
 
   .wrap-2 {
     display: flex;
+    justify-content: space-between;
   }
 
   .wrap-3 {

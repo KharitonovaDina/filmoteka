@@ -4,6 +4,11 @@
 
 @media screen and (min-width: 1024px) {
 
+  .check-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
   .checkbox {
     position: absolute;
     z-index: -1;
@@ -18,7 +23,7 @@
 
   .checkbox+label {
     display: inline-flex;
-    //align-items: center;
+    align-items: center;
     user-select: none;
 
     &::before {

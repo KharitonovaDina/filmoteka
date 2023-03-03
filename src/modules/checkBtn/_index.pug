@@ -1,2 +1,5 @@
 mixin checkBtn()
-    button.check Ok
+    input#checkbox.checkbox(type = "checkbox" value = "true")
+    label(for = "checkbox")
+        svg.checkbox__img
+            use(xLink:href = "./assets/img/sprite.svg#_check")

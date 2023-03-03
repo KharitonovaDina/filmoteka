@@ -4,11 +4,31 @@
 
 @media screen and (min-width: 1024px) {
 
-  .check {
-    border-radius: 90%;
-    width: 40px;
-    height: 40px;
-    border: none;
+  .checkbox {
+    position: absolute;
+    z-index: -1;
+    opacity: 0;
+  }
+
+  .checkbox__img {
+    width: 16px;
+    height: 16px;
+    color: $active-c;
+  }
+
+  .checkbox+label {
+    display: inline-flex;
+    //align-items: center;
+    user-select: none;
+
+    &::before {
+      content: '';
+      width: 24px;
+      height: 24px;
+      border-radius: 4px;
+      border: none;
+      background-color: lightgray;
+    }
   }
 
 }
